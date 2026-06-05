@@ -1,0 +1,17 @@
+Manifest.toml
+*.jl.cov
+*.jl.mem
+*.gif
+*.png
+*.pdf
+.DS_Store
+
+.vscode/
+.idea/
+
+plots/
+figures/
+
+*.csvX
+
+
