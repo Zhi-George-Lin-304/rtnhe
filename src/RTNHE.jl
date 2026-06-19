@@ -1,4 +1,4 @@
-module RTNAbsorption
+module RTNHE
 
 using LinearAlgebra
 using DifferentialEquations
@@ -12,6 +12,8 @@ include("rtn_hierarchy.jl")
 include("gaussian_benchmark.jl")
 include("channels.jl")
 include("models.jl")
+include("density_hierarchy.jl")
+include("density_observables.jl")
 include("simulation.jl")
 include("plotting.jl")
 include("examples.jl")
@@ -45,6 +47,19 @@ export
 
     default_single_transition_model,
     solve_and_spectrum,
+
+    default_two_level_density_model,
+
+    RTNGroupedDensityParams,
+    make_rtn_grouped_density_params,
+    rtn_grouped_density_rhs!,
+    solve_rtn_density_matrices,
+
+    density_populations,
+    density_coherence,
+    density_expectation,
+    density_traces,
+    density_purities,
 
     make_identical_absorption_plot,
     make_identical_absorption_error_plot,
